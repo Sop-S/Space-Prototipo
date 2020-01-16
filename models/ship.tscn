@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://models/SmallSpaceFighter.glb" type="PackedScene" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.686275, 0.662745, 0.662745, 1 )
+metallic_specular = 0.0
+metallic_texture_channel = 2
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.0784314, 0.74902, 0.733333, 1 )
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.894118, 0.101961, 0.101961, 1 )
+
+[node name="ship" instance=ExtResource( 2 )]
+
+[node name="Camera" parent="." index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="Plane001" parent="." index="1"]
+transform = Transform( -0.707259, -0.490497, -0.509115, -0.326382, -0.412264, 0.850596, -0.627104, 0.767757, 0.131488, 0, 0, 0 )
+
+[node name="Plane" parent="." index="2"]
+transform = Transform( 0.667056, 0.562761, -0.488198, 0.0812965, 0.596395, 0.798564, 0.740559, -0.572375, 0.352078, 0, 0, 0 )
+
+[node name="Small Space Fighter" parent="." index="3"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 3 )
+material/3 = SubResource( 4 )

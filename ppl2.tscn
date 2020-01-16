@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Camera.gd" type="Script" id=1]
+[ext_resource path="res://ppl2.gd" type="Script" id=2]
+[ext_resource path="res://models/missile1.glb" type="PackedScene" id=3]
+[ext_resource path="res://models/ship.tscn" type="PackedScene" id=4]
+
+[sub_resource type="CylinderShape" id=1]
+height = 3.53585
+
+[node name="ppl" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="KinematicPlayer" type="KinematicBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="KinematicPlayer"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0.5, 0.5 )
+shape = SubResource( 1 )
+
+[node name="ship" parent="KinematicPlayer" instance=ExtResource( 4 )]
+
+[node name="Camera2" type="Camera" parent="KinematicPlayer"]
+transform = Transform( 0.999979, 0.00643876, -0.000137349, -0.00644022, 0.999752, -0.0213263, 0, 0.0213267, 0.999773, 0.141, 2.7282, 25.8932 )
+fov = 40.6
+far = 3686.3
+script = ExtResource( 1 )
+
+[node name="PosRot" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30, 0 )
+
+[node name="Position3D" type="Spatial" parent="PosRot"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20 )
+
+[node name="miss" parent="PosRot/Position3D" instance=ExtResource( 3 )]
+transform = Transform( -0.1, 0, -3.25841e-08, 0, 0.1, 0, 3.25841e-08, 0, -0.1, 0, 0, 0 )

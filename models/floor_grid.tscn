@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://models/floor.meshlib" type="MeshLibrary" id=1]
+[ext_resource path="res://models/floor_grid.gd" type="Script" id=2]
+
+[node name="GridMap" type="GridMap"]
+mesh_library = ExtResource( 1 )
+data = {
+"cells": PoolIntArray( 65533, 65534, 0, 65534, 65534, 1, 65534, 65535, 0 )
+}
+script = ExtResource( 2 )
+__meta__ = {
+"_editor_clip_": 0
+}
