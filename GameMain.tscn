@@ -35,7 +35,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0 )
 shape = SubResource( 1 )
 
 [node name="Ship" parent="Entities/KinematicPlayer" instance=ExtResource( 3 )]
-transform = Transform( 1, 1.89175e-10, 0, -6.40284e-10, 1, 0, 6.40284e-10, 0, 1, 2.98023e-08, 0, -1.90735e-06 )
+transform = Transform( 1, 1.89175e-010, 0, -6.40284e-010, 1, 0, 6.40284e-010, 0, 1, 2.98023e-008, 0, -1.90735e-006 )
 
 [node name="Camera2" type="Camera" parent="Entities/KinematicPlayer"]
 transform = Transform( 0.999917, 0.0128729, -0.000411961, -0.0115754, 0.912239, 0.409495, 0.00564718, -0.409456, 0.912312, 0.360394, 7.81098, 9.4702 )
