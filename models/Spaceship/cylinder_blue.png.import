@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/METAL_pad1.png-27234fa4b532aa18963a77660590adb7.stex"
+path="res://.import/cylinder_blue.png-48fc95fd3e7acd9c8e9434d6b4655efa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://models/METAL_pad1.png"
-dest_files=[ "res://.import/METAL_pad1.png-27234fa4b532aa18963a77660590adb7.stex" ]
+source_file="res://models/Spaceship/cylinder_blue.png"
+dest_files=[ "res://.import/cylinder_blue.png-48fc95fd3e7acd9c8e9434d6b4655efa.stex" ]
 
 [params]
 

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Camera.gd" type="Script" id=1]
 [ext_resource path="res://ppl2.gd" type="Script" id=2]
-[ext_resource path="res://models/Ship.tscn" type="PackedScene" id=3]
+[ext_resource path="res://models/Spaceship/Ship.tscn" type="PackedScene" id=3]
 
 [sub_resource type="BoxShape" id=1]
 

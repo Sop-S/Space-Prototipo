@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/Ball_Placeholder.glb-f89687fe2721747cdd97a332e5543c04.scn"
+path="res://.import/Ball_Placeholder.glb-74cadc3118f596c74ed3fb52fb84db40.scn"
 
 [deps]
 
-source_file="res://Ball_Placeholder.glb"
-dest_files=[ "res://.import/Ball_Placeholder.glb-f89687fe2721747cdd97a332e5543c04.scn" ]
+source_file="res://models/Ball/Ball_Placeholder.glb"
+dest_files=[ "res://.import/Ball_Placeholder.glb-74cadc3118f596c74ed3fb52fb84db40.scn" ]
 
 [params]
 
